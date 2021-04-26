@@ -5,12 +5,16 @@
       "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
       "strict": true /* Enable all strict type-checking options. */,
       "forceConsistentCasingInFileNames": true,
-      "noEmit": true,
       "sourceMap": true,
       "outDir": "dist",
       "declaration": true,
       "jsx": "react",
-      "moduleResolution": "Node"
+      "esModuleInterop": true,
+      "moduleResolution": "Node",
+      "baseUrl":".",
+      "paths": {
+        "@/*" : ["src/*"]
+      }
     },
     "include": ["src"]
 }

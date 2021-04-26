@@ -10,6 +10,13 @@ module.exports = {
 	mode,
 	entry: path.resolve(__dirname, './src/index.tsx'),
 	devtool: 'inline-source-map',
+	devServer: {
+		historyApiFallback: true,
+		inline: true,
+		port: 3000,
+		hot: true,
+		publicPath: '/',
+	},
 	module: {
 		rules: [
 			{

@@ -9,7 +9,7 @@ const mode = process.env.NODE_ENV;
 module.exports = {
 	mode,
 	entry: path.resolve(__dirname, './src/index.tsx'),
-	devtool: 'inline-source-map',
+	devtool: process.env.NODE_ENV === 'production' ? 'eval' : 'inline-source-map',
 	devServer: {
 		historyApiFallback: true,
 		inline: true,
@@ -22,7 +22,7 @@ module.exports = {
 			{
 				test: /\.(ts|tsx)$/,
 				exclude: /node_modules/,
-				use: 'ts-loader',
+				use: ['babel-loader', 'ts-loader'],
 			},
 		],
 	},
@@ -31,7 +31,7 @@ module.exports = {
 		extensions: ['*', '.tsx', '.ts', '.js', '.jsx', '.json'],
 	},
 	output: {
-		filename: 'bundle.js',
+		filename: '[name].js',
 		path: path.resolve(__dirname, 'dist'),
 	},
 	plugins: [

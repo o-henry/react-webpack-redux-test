@@ -8,14 +8,13 @@ const presets = [
 			},
 		},
 	],
+	'@babel/preset-typescript',
 ];
 
-const env = {
-	development: {
-		plugins: ['babel-plugin-styled-components'],
-	},
-};
+const plugins = [
+	'@babel/plugin-transform-template-literals',
+	'@babel/plugin-transform-arrow-functions',
+	'babel-plugin-styled-components',
+];
 
-const plugins = ['@babel/plugin-transform-template-literals', '@babel/plugin-transform-arrow-functions'];
-
-module.exports = { presets, plugins, env };
+module.exports = { presets, plugins };

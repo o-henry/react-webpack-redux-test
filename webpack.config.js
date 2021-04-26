@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 
-const mode = process.env.NODE_ENV || 'development';
+const mode = process.env.NODE_ENV;
 
 module.exports = {
 	mode,

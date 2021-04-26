@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Styled from 'styled-components';
-
-const Title = Styled.h1`
-  color: green;
-`;
+import App from '@/App';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<Title>React with Webpack and etc...</Title>
+		<App />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

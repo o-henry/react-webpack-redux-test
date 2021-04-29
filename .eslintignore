@@ -1,5 +1,4 @@
 node_modules/
 src/serviceWorker.js
 src/*.test.ts
-src/stories/*.stories.tsx
-src/stories/*.stories.mdx
+src/stories/*

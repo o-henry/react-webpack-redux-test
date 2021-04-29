@@ -1,4 +1,4 @@
-# Requirement
+# Setting
 
 - react
 - typescript

@@ -33,7 +33,9 @@
 		"no-unused-vars": "off",
 		"@typescript-eslint/no-unused-vars": ["error"],
 		"@typescript-eslint/no-use-before-define": ["error"],
-		"react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
+		"react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+		"import/prefer-default-export":"off",
+		"import/extensions": "off"
 		// Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
 		// e.g. '@typescript-eslint/explicit-function-return-type': 'off',
 	},

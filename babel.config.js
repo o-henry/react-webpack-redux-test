@@ -9,6 +9,7 @@ const presets = [
     },
   ],
   '@babel/preset-typescript',
+  '@emotion/babel-preset-css-prop',
 ];
 
 const plugins = [

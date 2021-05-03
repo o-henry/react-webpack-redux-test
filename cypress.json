@@ -1,0 +1,6 @@
+{
+    "testFiles": "**/*.spec.{js,ts,jsx,tsx}",
+    "componentFolder": "cypress/component",
+    "chromeWebSecurity": false,
+    "experimentalFetchPolyfill": true
+}

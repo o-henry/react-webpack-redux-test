@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development webpack serve --config ./webpack.config.js --mode development --progress --open",
     "build": "NODE_ENV=production webpack --progress",
     "test": "jest & yarn cypress:test",
-    "test:watch": "yarn test -- --watch",
+    "test:watch": "jest --watch",
     "cypress:open": "cypress open",
     "cypress:run":  "cypress run --browser chrome",
     "cypress:test": "cypress run —- —-spec 'cypress/component/*.spec.tsx'",

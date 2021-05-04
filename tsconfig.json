@@ -12,7 +12,7 @@
       "esModuleInterop": true,
       "moduleResolution": "Node",
       "baseUrl":".",
-      "types": ["cypress"],
+      "types": ["cypress", "jest"],
       "paths": {
         "@/*" : ["src/*"]
       }

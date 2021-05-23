@@ -11,6 +11,7 @@
       "jsx": "react-jsx",
       "esModuleInterop": true,
       "moduleResolution": "Node",
+      "noImplicitAny": true,
       "baseUrl":".",
       "types": ["cypress", "jest"],
       "paths": {

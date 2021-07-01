@@ -1,5 +1,5 @@
 {
-  "name": "@common/web",
+  "name": "@henry/web",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,6 +15,8 @@
     "build": "yarn clean && yarn compile",
     "compile": "tsc --build && cp \"./package.json\" ./dist/",
     "start": "NODE_ENV=development webpack serve --config ./webpack.config.js --mode development --progress --open",
+    "start:storybook": "start-storybook -p 6006",
+    "build:stroybook": "build-storybook -c .storybook -o public",
     "test": "jest & yarn cypress:test",
     "test:watch": "jest --watch",
     "cypress:open": "cypress open",
@@ -23,9 +25,7 @@
     "cypress:recored": "cypress run --record",
     "lint": "eslint \"./src/**/*.{ts,tsx,js,jsx}\" || true",
     "lint:fix": "eslint --fix \"./src/**/*.{ts,tsx,js,jsx}\" || true",
-    "prettier": "prettier --write --config ./.prettierrc \"./src/**/*.{ts,tsx,js,jsx}\" || true",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "prettier": "prettier --write --config ./.prettierrc \"./src/**/*.{ts,tsx,js,jsx}\" || true"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",

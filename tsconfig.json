@@ -3,7 +3,7 @@
       "jsx": "react",
       "baseUrl": "./packages",
       "paths": {
-          "@common/web/*": [
+          "@henry/web/*": [
               "web/src/*"
           ],
       }

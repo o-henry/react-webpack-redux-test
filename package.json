@@ -10,7 +10,7 @@
         "build": "lerna run build --stream",
         "lint": "lerna run lint --stream --parallel",
         "test": "yarn jest --coverage",
-        "start:web": "yarn run build && lerna run start --scope @henry/web "
+        "start:web": "lerna run start --scope @henry/web "
     },
     "devDependencies": {
         "eslint": "^7.25.0",

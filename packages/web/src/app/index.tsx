@@ -1,7 +1,7 @@
 import React from 'react';
 
-function App() {
-  return <></>;
+function App(): React.ReactElement {
+  return <>Hello2</>;
 }
 
 export default App;

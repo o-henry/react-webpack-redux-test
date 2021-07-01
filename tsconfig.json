@@ -1,23 +1,17 @@
 {
-    "compilerOptions": {
-      "target": "ES2018",
-      "allowJs": true,
-      "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
-      "strict": true /* Enable all strict type-checking options. */,
-      "forceConsistentCasingInFileNames": true,
-      "noEmitOnError": true,
-      "sourceMap": true,
-      "outDir": "dist",
-      "declaration": true,
-      "jsx": "react-jsx",
-      "esModuleInterop": true,
-      "moduleResolution": "Node",
-      "noImplicitAny": true,
-      "baseUrl":".",
-      "types": ["cypress", "jest"],
+  "compilerOptions": {
+      "jsx": "react",
+      "baseUrl": "./packages",
       "paths": {
-        "@/*" : ["src/*"]
+          "@common/web/*": [
+              "web/src/*"
+          ],
       }
-    },
-    "include": ["src"]
+  },
+  "files": [],
+  "references": [
+      {
+          "path": "packages/web"
+      }
+  ]
 }
